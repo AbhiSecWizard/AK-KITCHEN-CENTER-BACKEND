@@ -40,7 +40,8 @@ const sendContactEmail = async (req, res) => {
       });
     }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 
     if (!emailPattern.test(customerEmail)) {
       return res.status(400).json({
