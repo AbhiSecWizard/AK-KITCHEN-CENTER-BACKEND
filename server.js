@@ -13,7 +13,7 @@ console.log("EMAIL_USER:", process.env.EMAIL_USER);
 console.log("COMPANY_EMAIL:", process.env.COMPANY_EMAIL);
 
 app.use(cors({
-  origin:"*"
+  origin:"https://ak-kitchen-center-lake.vercel.app/"
 }))
 
 app.use(express.json());
